@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Roboto&display=swap");
+
+:root {
+  --primary: #00b98e;
+  --secondary: #effdf5;
+  --light: #effdf5;
+  --dark: #0e2e50;
+  --espacamento: 50px 50px;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Heebo";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--espacamento);
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  gap: 10px;
+  color: var(--primary);
+}
+
+.header-logo figure {
+  padding: 5px;
+  border: 1px dashed #00b98e;
+  border-radius: 100%;
+}
+
+.header-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: var(--espacamento);
+}
+
+main .col1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 50px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+main .col1 input {
+  background-color: var(--primary);
+  color: white;
+  width: 150px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-weight: bolder;
+  color: var(--dark);
+  font-size: 50px;
+}
+
+p {
+  color: grey;
+}
+
+main .col1 p {
+  color: gray;
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sec1 p {
+  text-align: center;
+  padding: 0px 300px;
+}
+
+.sec1 .container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.sec1 .container-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 30px 70px;
+  gap: 20px;
+  box-shadow: 0px 0px 0px 10px #effdf5;
+}
+
+.sec2 {
+  padding: var(--espacamento);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sec2 .container-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.sec2 .container-cards .card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sec2 .container-cards .card figure img {
+  width: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sec2 .container-cards .card .card-txt {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sec2 .container-cards .card .card-txt h4 {
+  color: #00b98e;
+  font-size: 28px;
+}
+
+.sec2 .container-cards .card .card-txt h3 {
+  color: var(--dark);
+  font-size: 24px;
+}
+
+form {
+  padding: var(--espacamento);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form p {
+  text-align: center;
+  padding: 0px 120px;
+}
+
+form .container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .container-form .form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 810px;
+  height: 45px;
+  outline-width: 1px;
+  outline: auto;
+  outline-color: gray;
+}
+
+input::placeholder,
+textarea::placeholder {
+  padding: 7px;
+}
+
+#nome,
+#email,
+#tel,
+#endereco {
+  width: 400px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: var(--primary);
+  outline: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: var(--dark);
+  padding: var(--espacamento);
+  color: whitesmoke;
+  width: 100%;
+  display: flex;
+}
+
+footer .col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .col .infos {
+  display: flex;
+  gap: 10px;
+}
+
+footer .col .infos .col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+footer .col .logos {
+  display: flex;
+  gap: 5px;
+}
+
+footer .footer-links {
+  display: flex;
+}
+
+footer .footer-links ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+}
+
+footer .footer-links ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+body {
+  position: relative;
+}
+
+.button-fixed {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
