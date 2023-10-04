@@ -64,6 +64,10 @@ main .col1 {
   align-items: flex-start;
 }
 
+main .col1 #contraste {
+  color: var(--primary);
+}
+
 main .col1 input {
   background-color: var(--primary);
   color: white;
